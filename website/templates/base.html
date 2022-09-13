@@ -5,130 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/e4d4ff6de1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/icons8-video-camera-72.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>{% block title %}{% endblock %}</title>
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+    </style>
 </head>
 
-<body class="bg-gray-200">
-
-    <!-- This is the navbar -->
-	<nav class="relative px-4 py-4 flex justify-between items-center bg-white fixed-top">
-		<a class="text-3xl font-bold leading-none" href="#">
-            <p class="text-xl text-black italic">ReFill</p>
-		</a>
-		
-        <div class="lg:hidden">
-			<button class="navbar-burger flex items-center text-blue-600 p-3">
-				<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-					<title>Mobile menu</title>
-					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-				</svg>
-			</button>
-		</div>
-		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a></li>
-			<li class="text-gray-300">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-				</svg>
-			</li>
-			<li><a class="text-sm text-blue-600 font-bold" href="#">About Us</a></li>
-		</ul>
-
-		<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">Sign In</a>
-		<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a>
-	</nav>
-	<div class="navbar-menu relative z-50 hidden">
-		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-			<div class="flex items-center mb-8">
-				<a class="mr-auto text-3xl font-bold leading-none" href="#">
-                    <p class="text-xl text-black italic">ReFill</p>
-				</a>
-				<button class="navbar-close">
-					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-					</svg>
-				</button>
-			</div>
-			<div>
-				<ul>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
-					</li>
-				</ul>
-			</div>
-			<div class="mt-auto">
-				<div class="pt-6">
-					<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign in</a>
-					<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign Up</a>
-				</div>
-			</div>
-		</nav>
-	</div> 
+<body class="m-0 p-0 box-border scroll-pt-8 bg-[#1e1e2a]">
+    <!-- Header -->
+    <header  class="fixed top-0 left-0 w-full z-[100] bg-[#1e1e2a]">
+        <!-- nav -->
+        <div class="flex items-center justify-center pt-5 pb-0 max-w-[1060px] m-auto w-full">
+            <!-- img -->
+            <a href="#" class="no-underline text-2xl text-white font-semibold mt-0 mr-auto mb-0 ml-0 uppercase">Re<span class="text-[#ffb43a]">Fil</span></a>
+            <!-- search box -->
+            <div class="max-w-[240px] w-full flex items-center gap-x-[0.7rem] py-[8px] px-[15px] bg-[#2d2e37] rounded-full mr-4 mb-4">
+                <input class="w-full border-none outline-none text-white bg-transparent text-[0.938rem]" type="search" name="" id="search-input" placeholder="Search Movie"> 
+                <div class="text-base text-[#fcfeff] hover:text-[#ffb4a3]"><i class='bx bx-search'></i></div>
+                
+            </div>
+            <!-- navbar -->
+            <div class="font-bold fixed top-1/2 translate-y-[-50%] left-[20px] flex flex-col gap-y-[2.1rem]">
+              <a href="/main_page" class="flex flex-col items-center scale-110 text-white hover:scale-125">
+                  <div class="text-2xl">
+                      <i class='bx bx-home'></i>
+                  </div>
+                  <span class="text-[0.7rem]">Home</span>
+              </a>
+              <a href="#popular" class="nav-link flex flex-col items-center text-[#b7b7b7] hover:text-white hover:scale-110 nav-active">
+                  <div class="text-[1.6rem]">
+                      <i class='bx bxs-hot'></i>
+                  </div>
+                  <span class="text-[0.7rem]">Trending</span>
+              </a>
+              <a href="#comingsoon" class="nav-link flex flex-col items-center text-[#b7b7b7] hover:text-white hover:scale-110 nav-active">
+                  <div class="text-[1.6rem]">
+                      <i class='bx bxs-time'></i>
+                  </div>
+                  <span class="text-[0.7rem]">Comingsoon</span>
+              </a>
+              <a href="home.html" class="nav-link flex flex-col items-center scale-110 text-white hover:scale-125">
+                  <div class="text-[1.6rem]">
+                      <i class='bx bx-log-in-circle' ></i>
+                  </div>
+                  <span class="text-[0.7rem]">Log Out</span>
+              </a>
+              <a href="#about" class="nav-link flex flex-col items-center text-[#b7b7b7] hover:text-white hover:scale-110">
+                <div class="text-[1.6rem]">
+                    <i class='bx bx-question-mark'></i>
+                </div>
+                <span class="text-[0.7rem]">About</span>
+            </a>
+            <a href="/login" class="nav-link flex flex-col items-center scale-110 text-white hover:scale-125">
+                <div class="text-[1.6rem]">
+                    <i class='bx bx-log-in-circle' ></i>
+                </div>
+                <span class="text-[0.7rem]">Log In</span>
+            </a>
+            <a href="/sign_up" class="nav-link flex flex-col items-center scale-110 text-white hover:scale-125">
+              <div class="text-[1.6rem]">
+                  <i class='bx bx-log-in-circle' ></i>
+              </div>
+              <span class="text-[0.7rem]">Sign Up</span>
+            </a>
+          </div>
+        </div>
+    </header>
 
     <div>
-        {% block content %}
+      {% block content %}
 
-        {% endblock %}
+      {% endblock %}
     </div>
 
-    <!--This is the footer-->
-    <footer class="bg-gray-200 text-center lg:text-left fixed inset-x-0 bottom-0">
-        <div class="text-gray-700 text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2022 Copyright:
-          <a class="text-gray-800" href="https://tailwind-elements.com/">Tailwind Elements</a>
+    <!-- footer -->
+    <footer class="text-[#fcfeff] body-font  max-w-5xl mx-auto  pt-20 sm:pt-24 lg-pt-32" >
+        <div class="container px-5 py-8 mx-auto flex items-center fixed bottom-0 sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-[#fcfeff]">
+            <h1 class="ml-3 text-2xl">Re<span class="text-orange-300">Fil</span></h1>
+            
+          </a>
+          <p class="text-sm text-[#fcfeff] sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 ReFil </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <ul class="text-xl flex items-center justify-center space-x-8 xl:justify-end">
+                <li>
+                    <a href="#" title="" class=" block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                        <i class="bx bxl-github" ></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" title="" class="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" title="" class="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </li>
+            </ul>
+          </span>
         </div>
       </footer>
-    
-    <script>
-        // Burger menus
-        document.addEventListener('DOMContentLoaded', function() {
-            // open
-            const burger = document.querySelectorAll('.navbar-burger');
-            const menu = document.querySelectorAll('.navbar-menu');
-
-            if (burger.length && menu.length) {
-                for (var i = 0; i < burger.length; i++) {
-                    burger[i].addEventListener('click', function() {
-                        for (var j = 0; j < menu.length; j++) {
-                            menu[j].classList.toggle('hidden');
-                        }
-                    });
-                }
-            }
-
-            // close
-            const close = document.querySelectorAll('.navbar-close');
-            const backdrop = document.querySelectorAll('.navbar-backdrop');
-
-            if (close.length) {
-                for (var i = 0; i < close.length; i++) {
-                    close[i].addEventListener('click', function() {
-                        for (var j = 0; j < menu.length; j++) {
-                            menu[j].classList.toggle('hidden');
-                        }
-                    });
-                }
-            }
-
-            if (backdrop.length) {
-                for (var i = 0; i < backdrop.length; i++) {
-                    backdrop[i].addEventListener('click', function() {
-                        for (var j = 0; j < menu.length; j++) {
-                            menu[j].classList.toggle('hidden');
-                        }
-                    });
-                }
-            }
-        });
-    </script>
-
+    <!-- footer end -->
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/main.js"></script>
 </body>
 </html>

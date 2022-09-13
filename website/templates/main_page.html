@@ -1,0 +1,362 @@
+{% extends "base.html" %}
+{% block title %} ReFill - Main Page{% endblock %}
+
+{% block content %}
+
+    <!-- Home -->
+    <section class="home container pt-[3rem] pr-0 pb-[2rem] max-w-[1060px] m-auto w-full relative min-h-[470px] flex items-center mt-[5rem] rounded" id="home">
+        <!-- home img -->
+        <img src="img/home-background.png" alt="" class="home-img absolute w-full h-fu z-[-1] object-cover rounded">
+        <!-- home text -->
+        <div class="home-text pl-[40px]">
+            <h1 class="home-title text-[2rem] font-semibold">Hitman's Wife's <br>Bodyguard</h1>
+            <p class="text-[0.938rem] mt-2.5 mr-0 mb-5 text-[#ffb43a]">Releasing 10 April</p>
+            <a href="" class="watch-btn flex items-center gap-x-[0.8rem] text-[#b7b7b7] hover:text-[#fcfeff]">
+                <i class='bx bx-right-arrow'></i>
+                <span class="text-base font-semibold">Button</span>
+            </a>
+        </div>
+    </section>
+    <!-- home end -->
+    <!-- popular strt -->
+    <section class="popular container pt-[3rem] pr-0 pb-[2rem] max-w-[1060px] m-auto w-full" id="popular">
+        <div class="heading flex items-center justify-between bg-[#2d2e37] py-[8px] px-[14px] border-2 border-transparent mb-[2rem]">
+            <h2 class="heading-title text-[1.2rem] font-medium">Popular Movies</h2>
+        </div>
+        <!-- content -->
+        <div class="popular-content swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- popular end -->
+
+    <!-- coming soon -->
+    <section class="popular container pt-[3rem] pr-0 pb-[2rem] max-w-[1060px] m-auto w-full" id="comingsoon">
+        <div class="heading flex items-center justify-between bg-[#2d2e37] py-[8px] px-[14px] border-2 border-transparent mb-[2rem]">
+            <h2 class="heading-title text-[1.2rem] font-medium">ComingSoon</h2>
+        </div>
+        <!-- content -->
+        <div class="popular-content swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="movie-box relative w-full h-[380px] overflow-hidden ">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="movie-title text-[1.1rem] font-semibold">Spider-Man: No Way Home</h2>
+                            <span class="movie-type text-[0.938rem]">Action</span>
+                            <div class="star text-[#ffb43a]">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star'></i>
+                                <span class="ml-[8px]">8.8</span>
+                            </div>
+                            <a href="detail.html" class="more-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[100px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span>More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- coming sn end -->
+    <!-- wishlist -->
+    <section class="soon container pt-[3rem] pr-0 pb-[2rem] max-w-[1060px] m-auto w-full" id="wishlist">
+        <div class="heading flex items-center justify-between bg-[#2d2e37] py-[8px] px-[14px] border-2 border-transparent mb-[2rem]">
+            <h2 class="heading-title text-[1.2rem] font-medium">Coming Soon Movie</h2>
+        </div>
+        <!-- content -->
+        <div class="soon-content swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="wishlist-box relative w-full h-[200px] overflow-hidden">
+                        <img src="img/popular-movie-1.jpg" alt="" class="wishlist-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px]  overflow-hidden">
+                            <h2 class="wishlist-title text-[0.9rem] font-semibold mb-[5px]">Spider-Man: No Way Home</h2>
+                            <a href="" class="more-wishlist-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[80px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span class="text-[0.8rem] font-medium">More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="wishlist-box relative w-full h-[200px] overflow-hidden">
+                        <img src="img/popular-movie-1.jpg" alt="" class="wishlist-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="wishlist-title text-[0.9rem] font-semibold mb-[5px]">Spider-Man: No Way Home</h2>
+                            <a href="" class="more-wishlist-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[80px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span class="text-[0.8rem] font-medium">More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="wishlist-box relative w-full h-[200px] overflow-hidden">
+                        <img src="img/popular-movie-1.jpg" alt="" class="wishlist-box-img w-full h-full object-cover contrast-75 rounded-xl">
+                        <div class="box-text absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-[14px] overflow-hidden">
+                            <h2 class="wishlist-title text-[0.9rem] font-semibold mb-[5px]">Spider-Man: No Way Home</h2>
+                            <a href="" class="more-wishlist-btn inline-block rounded-lg outline-none text-white text-center relative font-semibold w-[80px] border-2 border-[#ffb43a] z-[1] hover:text-[#fcfeff] hover:bg-[#ffb43a] hover:gap-x-[0.8rem]">
+                                <span class="text-[0.8rem] font-medium">More</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+              </div>
+              
+              <div class="swiper-btn">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              
+        </div>
+    </section>
+    <!-- wishlist end -->
+
+{% endblock %}
