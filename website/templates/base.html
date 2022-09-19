@@ -29,10 +29,10 @@
                 <div class="text-base text-[#fcfeff] hover:text-[#ffb4a3]"><i class='bx bx-search'></i></div>
                 
             </div>
-            <!-- navbar -->
-            {% if user.is_authenticated %}
+            <!-- navbar 
             <div class="font-bold fixed top-1/2 translate-y-[-50%] left-[20px] flex flex-col gap-y-[2.1rem]">
-              <a href="/main_page" class="flex flex-col items-center scale-110 text-white hover:scale-125">
+                {# if user.is_authenticated #}
+                <a href="/main_page" class="flex flex-col items-center scale-110 text-white hover:scale-125">
                   <div class="text-2xl">
                       <i class='bx bx-home'></i>
                   </div>
@@ -50,13 +50,13 @@
                   </div>
                   <span class="text-[0.7rem]">Coming Soon</span>
               </a>
-              <a href="home.html" class="nav-link flex flex-col items-center scale-110 text-white hover:scale-125">
+              <a href="/home" class="nav-link flex flex-col items-center scale-110 text-white hover:scale-125">
                   <div class="text-[1.6rem]">
                       <i class='bx bx-log-in-circle' ></i>
                   </div>
                   <span class="text-[0.7rem]">Log Out</span>
               </a>
-            {% else %}
+            {# else #}
               <a href="#about" class="nav-link flex flex-col items-center text-[#b7b7b7] hover:text-white hover:scale-110">
                 <div class="text-[1.6rem]">
                     <i class='bx bx-question-mark'></i>
@@ -74,9 +74,10 @@
                   <i class='bx bx-log-in-circle' ></i>
               </div>
               <span class="text-[0.7rem]">Sign Up</span>
-            {% endif %}
-            </a>
+            </a>  
+            {# endif #}
           </div>
+            -->
         </div>
     </header>
 
@@ -98,7 +99,7 @@
             <ul class="text-xl flex items-center justify-center space-x-8 xl:justify-end">
                 <li>
                     <a href="#" title="" class=" block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
-                        <i class="bx bxl-github" ></i>
+                        <i class="bx bxl-github"></i>
                     </a>
                 </li>
 

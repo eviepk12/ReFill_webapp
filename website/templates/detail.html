@@ -1,0 +1,73 @@
+{% extends "base.html" %} 
+{% block title%} ReFill - Synopsis {% endblock %}
+
+{% block content%}
+
+<section class="relative text-gray-600 body-font overflow-hidden">
+    <button class="absolute mt-8 ml-16 text-4xl hover:scale-110 ">
+    <a href="index.html" class="text-[#fcfeff] hover:text-[#ffb43a]">
+        <i class='bx bx-x-circle'></i>
+    </a>
+    </button>
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="img/popular-movie-3.jpg">
+        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <h2 class="text-sm title-font text-gray-500 tracking-widest">Marvel Studios</h2>
+          <h1 class="text-[#fcfeff] text-3xl title-font font-medium mb-1">Loki</h1>
+          <div class="flex mb-4">
+            <span class="flex items-center" >
+                <i class='bx bxs-star' style='color:#ffb43a'  ></i>
+                <i class='bx bxs-star' style='color:#ffb43a'  ></i>
+                <i class='bx bxs-star' style='color:#ffb43a'  ></i>
+                <i class='bx bxs-star' style='color:#ffb43a'  ></i>
+                <i class='bx bx-star' style='color:#ffb43a' ></i>
+              <span class="text-[#ffb43a] ml-3">8.8</span>
+              <span class="text-[#fcfeff] ml-3">( 6969 )</span>
+            </span>
+            <span class="flex ml-3 pl-3 py-2 border-l border-gray-200 space-x-2s">
+              <label for="my-modal" class=" text-xs font-bold flex ml-auto text-[#1e1e2a] bg-[#ffb43a] border-0 py-2 px-6 focus:outline-none hover:bg-[#f3a830] rounded">Your Ratings</label>
+
+              <!-- Put this part before tag -->
+              <input type="checkbox" id="my-modal" class="modal-toggle" />
+              <div class="modal">
+                <div class="modal-box">
+                  <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                  <p>Thank YOUUUU</p>
+                  <div class="modal-action">
+                    <label for="my-modal" class="btn">Yay!</label>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+          <h2 class="font-semibold my-2 text-lg text-[#ffb43a]">Synopsis : </h2>
+          <p class="leading-relaxed ml-2 text-[#fcfeff]">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+          <h2 class="font-semibold mt-5 mb-2 text-lg text-[#ffb43a]">Information : </h2>
+          <div class="flex my-2 font-medium text-[#ffb43a]">
+            <p class="mx-2 py-0 px-2 border-2 border-[#ffb43a] rounded-full">Action</p>
+            <p class="mx-2 py-0 px-2 border-2 border-[#ffb43a] rounded-full">Fantasy</p>
+            <p class="mx-2 py-0 px-2 border-2 border-[#ffb43a] rounded-full">Isekai</p>
+            <p class="mx-2 py-0 px-2 border-2 border-[#ffb43a] rounded-full">Harem</p>
+          </div>
+          <div class="ml-2 my-4 font-semibold text-[#ffb43a]">
+            <p class="my-2"> Director : <span class="font-normal text-[#fcfeff]">Johny</span></p>
+            <p class="my-2"> Release Date : <span class="font-normal text-[#fcfeff]">June 9, 2021 (Indonesia)</span></p>
+            <p class="my-2"> Production Company : <span class="font-normal text-[#fcfeff]">Marvel Studios</span></p>
+            <p class="my-2"> Cast : <span class="font-normal text-[#fcfeff]">Tom Hiddleston, Owen Wilson, Ke Huy Quan, ophia Di Martino, Neil Ellice</span></p>
+          </div>
+          <div class="">
+            <button class="flex ml-auto font-semibold text-[#1e1e2a] bg-[#ffb43a] border-0 py-2 px-6 focus:outline-none hover:bg-[#f3a830] rounded">Add To Watchlist </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+{% endblock %}
